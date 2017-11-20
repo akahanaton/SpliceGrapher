@@ -1,0 +1,20 @@
+import glob, os
+import subprocess
+
+shell.prefix("set -euo pipefail;")
+
+cmds = [os.path.dirname(f) + "/" + os.path.basename(f) for f in glob.glob('reads_sam_sh/*.sh')]
+
+rule all:
+    #--------------------------------------------------
+    # input: os.path.dirname(f) + ".cmd/" + os.path.basename(f) for f in expand('{A}',A=cmds)
+    #--------------------------------------------------
+    input: expand('{A}.done', A=cmds)
+
+rule exec:
+    input: bashFile='{A}'
+    output: touch('{A}.done')
+    shell:
+        """
+            bash {input.bashFile}
+        """

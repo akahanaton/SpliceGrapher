@@ -1,0 +1,2 @@
+view_splicegraph_multiplot.py AKR1C3:maker-000005F-augustus-gene-0.182 -H 30 -W 15 -J 2 -c -L -o all_plot/000005F/AKR1C3/AKR1C3.pdf -s 1,all_plot/000005F/AKR1C3/pacbio.gff,1,all_plot/000005F/AKR1C3/pacbio.gff.male -m all_plot/000005F/AKR1C3/model.gff -G 1,all_plot/000005F/AKR1C3/graph.gff -d 1,all_plot/000005F/AKR1C3/Lung.female.sam,1,all_plot/000005F/AKR1C3/Lung.male.sam
+cp all_plot/000005F/AKR1C3/AKR1C3.pdf ./

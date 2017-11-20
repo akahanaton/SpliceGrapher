@@ -1,0 +1,2 @@
+view_splicegraph_multiplot.py ABHD1:maker-000013F-snap-gene-5.329,gene6309 -H 30 -W 15 -J 2 -c -L -o all_plot/000013F/ABHD1/ABHD1.pdf -s 1,all_plot/000013F/ABHD1/pacbio.gff,1,all_plot/000013F/ABHD1/pacbio.gff.male -m all_plot/000013F/ABHD1/model.gff,pteAle/all_plot/NW_006434835.1/ABHD1/model.gff -G 1,all_plot/000013F/ABHD1/graph.gff,2,pteAle/all_plot/NW_006434835.1/ABHD1/graph.gff -d 1,all_plot/000013F/ABHD1/Lung.female.sam,1,all_plot/000013F/ABHD1/Lung.male.sam
+cp all_plot/000013F/ABHD1/ABHD1.pdf ./
